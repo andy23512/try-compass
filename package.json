@@ -1,0 +1,10 @@
+{
+  "name": "try-compass",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-compass": "^2.1.0"
+  }
+}
