@@ -2,11 +2,11 @@ var gulp = require('gulp');
 var compass = require('gulp-compass');
 
 gulp.task('compass', function() {
-  ['./', './mobile/', './event/'].forEach(function(dir){
-    gulp.src(dir+'sass/*.sass')
+  ['./', './mobile/', './event/'].map(function(dir){
+    return gulp.src(dir+'sass/*.sass')
     .pipe(compass({
       sass: dir+'sass/',
-      css: dir+'sass/',
+      css: dir+'css/',
     }))
     .pipe(gulp.dest(dir+'css'));
   })
